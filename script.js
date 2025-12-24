@@ -39,7 +39,7 @@ const imgCoin = document.querySelector(".flag")
 
 function changeCoin() {
     if (coinselect.value === "dolar") {
-        imgCoin.src = "./assets/img/dolar.png"
+        imgCoin.src = "./assets/img/usa.png"
     } else if (coinselect.value === "euro") {
         imgCoin.src = "./assets/img/euro.png"
     } else if (coinselect.value === "bitcoin") {
