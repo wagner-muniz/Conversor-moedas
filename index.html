@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+
+    <img src="./assets/img/conversor-moedas.png" alt="logoConversor">
+
+    <main>
+        <form>
+
+            <label for="converter-de">Converter</label>
+            <div class="select-container">
+                <img src="./assets/img/brasil.png" alt="Bandeira do Brasil" class="brasil">
+                <select id="converter-de">
+                    <option value="real">Real</option>
+                    <!-- <option value="dolar">Dólar</option>
+                    <option value="euro">Euro</option>
+                    <option value="bitcoin">Bitcoin</option> -->
+                </select>
+            </div>
+
+            <label for="converter-para">Converter para</label>
+            <div class="select-container">
+                <img src="./assets/img/usa.png" alt="Bandeira dos Estados Unidos" class="flag">
+                <select id="converter-para" class="coin-select">
+                    <option value="dolar">Dólar</option>
+                    <option value="euro">Euro</option>
+                    <!-- <option value="real">Real</option> -->
+                    <option value="bitcoin">Bitcoin</option>
+                </select>
+            </div>
+
+            <label for="valor">Valor</label>
+            <div class="input-container1">
+                <input id="valor" type="number" placeholder="1000">
+            </div>
+
+            <label for="valor-convertido" >Valor convertido</label>
+            <div >
+                <input id="valor-convertido" class="input-container" placeholder="0.00">
+            </div>
+            <button type="button" class="btn-converter">Converter</button>
+        </form>
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
